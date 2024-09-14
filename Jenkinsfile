@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git branch: 'main', url: 'https://github.com/-'
+                git branch: 'main', url: 'https://github.com/muzma/akulaku-hello.git'
                
                  bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
